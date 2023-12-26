@@ -1,0 +1,494 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3896300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User should entered in adactin hotel home page",
+            "match": {
+              "location": "LoginPageStep.userShouldEnteredInAdactinHotelHomePage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 20992961400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.beforeScenario()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "Verifying Adactin hotel Book hotels with valid credentials",
+        "description": "",
+        "id": "verifying-adactin-hotel-book-hotels-details;verifying-adactin-hotel-book-hotels-with-valid-credentials;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 232944800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1880136000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User should perform login \"Suresh21\",\"SURESH\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Suresh21\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"SURESH\"",
+                  "offset": 37
+                }
+              ],
+              "location": "LoginPageStep.userShouldPerformLogin(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "Verify after Login \"Hello Suresh21!\"",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 26400,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "User should Search a hotel with \"Melbourne\",\"\u003cHotels \u003e\",\"Standard\",\"2 - Two\",\"15/08/2022\",\"16/08/2022\",\"2 - Two\" and \"2 - Two\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Melbourne\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"\u003cHotels \u003e\"",
+                  "offset": 44
+                },
+                {
+                  "val": "\"Standard\"",
+                  "offset": 56
+                },
+                {
+                  "val": "\"2 - Two\"",
+                  "offset": 67
+                },
+                {
+                  "val": "\"15/08/2022\"",
+                  "offset": 77
+                },
+                {
+                  "val": "\"16/08/2022\"",
+                  "offset": 90
+                },
+                {
+                  "val": "\"2 - Two\"",
+                  "offset": 103
+                },
+                {
+                  "val": "\"2 - Two\"",
+                  "offset": 117
+                }
+              ],
+              "location": "SearchHotelStep.userShouldSearchAHotelWithAnd(String,String,String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "Verify after Search Hotels \"Select Hotel\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 18500,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "User should select hotel and click continue",
+            "match": {
+              "location": "SelectHotelStep.userShouldSelectHotelAndClickContinue()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 14,
+            "name": "User should verify After select hotel\"Book A Hotel\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 56500,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "User should book hotel \"Suresh\",\"Kumar\" and \"Chennai\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Suresh\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"Kumar\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"Chennai\"",
+                  "offset": 44
+                }
+              ],
+              "location": "BookHotelStep.userShouldBookHotelAnd(String,String,String,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "CcNum",
+                  "CreditCardType",
+                  "ExpiryMonth",
+                  "ExpiryYear",
+                  "CVVNO"
+                ]
+              },
+              {
+                "cells": [
+                  "1234567890098765",
+                  "American Express",
+                  "January",
+                  "2022",
+                  "456"
+                ]
+              },
+              {
+                "cells": [
+                  "5678901234567890",
+                  "VISA",
+                  "February",
+                  "2022",
+                  "281"
+                ]
+              },
+              {
+                "cells": [
+                  "4567890123456789",
+                  "Master Card",
+                  "March",
+                  "2022",
+                  "759"
+                ]
+              },
+              {
+                "cells": [
+                  "3456789012345678",
+                  "Other",
+                  "April",
+                  "2022",
+                  "478"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 21,
+            "name": "User should verify after book hotel \"Booking Confirmation\"",
+            "match": {},
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@BookHotelPage"
+          },
+          {
+            "name": "@passAllFields"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 76900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User should entered in adactin hotel home page",
+            "match": {
+              "location": "LoginPageStep.userShouldEnteredInAdactinHotelHomePage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 19531236900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.beforeScenario()"
+            }
+          }
+        ],
+        "line": 40,
+        "name": "Verifying Adactin hotel Book hotels without enter any files",
+        "description": "",
+        "id": "verifying-adactin-hotel-book-hotels-details;verifying-adactin-hotel-book-hotels-without-enter-any-files;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 230214700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1809823100,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User should perform login \"Suresh21\",\"SURESH\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Suresh21\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"SURESH\"",
+                  "offset": 37
+                }
+              ],
+              "location": "LoginPageStep.userShouldPerformLogin(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 30,
+            "name": "Verify after Login \"Hello Suresh21!\"",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 14000,
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "User should Search a hotel with \"Melbourne\",\"\u003cHotels \u003e\",\"Standard\",\"2 - Two\",\"15/08/2022\",\"16/08/2022\",\"2 - Two\" and \"2 - Two\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Melbourne\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"\u003cHotels \u003e\"",
+                  "offset": 44
+                },
+                {
+                  "val": "\"Standard\"",
+                  "offset": 56
+                },
+                {
+                  "val": "\"2 - Two\"",
+                  "offset": 67
+                },
+                {
+                  "val": "\"15/08/2022\"",
+                  "offset": 77
+                },
+                {
+                  "val": "\"16/08/2022\"",
+                  "offset": 90
+                },
+                {
+                  "val": "\"2 - Two\"",
+                  "offset": 103
+                },
+                {
+                  "val": "\"2 - Two\"",
+                  "offset": 117
+                }
+              ],
+              "location": "SearchHotelStep.userShouldSearchAHotelWithAnd(String,String,String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 32,
+            "name": "Verify after Search Hotels \"Select Hotel\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 12600,
+              "status": "skipped"
+            },
+            "line": 33,
+            "name": "User should select hotel and click continue",
+            "match": {
+              "location": "SelectHotelStep.userShouldSelectHotelAndClickContinue()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 34,
+            "name": "User should verify After select hotel\"Book A Hotel\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11800,
+              "status": "skipped"
+            },
+            "line": 35,
+            "name": "User should perform book a hotel without any details",
+            "match": {
+              "location": "BookHotelStep.userShouldPerformBookAHotelWithoutAnyDetails()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11900,
+              "status": "skipped"
+            },
+            "line": 36,
+            "name": "User Should verify after book hotel error with msg \"Please Enter your First Name\",\"Please Enter you Last Name\",\"Please Enter your Address\",\"Please Enter your 16 Digit Credit Card Number\",\"Please Select your Credit Card Type\",\"Please Select your Credit Card Expiry Month\" and \"Please Enter your Credit Card CVV Number\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Please Enter your First Name\"",
+                  "offset": 51
+                },
+                {
+                  "val": "\"Please Enter you Last Name\"",
+                  "offset": 82
+                },
+                {
+                  "val": "\"Please Enter your Address\"",
+                  "offset": 111
+                },
+                {
+                  "val": "\"Please Enter your 16 Digit Credit Card Number\"",
+                  "offset": 139
+                },
+                {
+                  "val": "\"Please Select your Credit Card Type\"",
+                  "offset": 187
+                },
+                {
+                  "val": "\"Please Select your Credit Card Expiry Month\"",
+                  "offset": 225
+                },
+                {
+                  "val": "\"Please Enter your Credit Card CVV Number\"",
+                  "offset": 275
+                }
+              ],
+              "location": "BookHotelStep.userShouldVerifyAfterBookHotelErrorWithMsgAnd(String,String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@BookHotelPage"
+          },
+          {
+            "name": "@WithOutFiles"
+          }
+        ]
+      }
+    ],
+    "name": "Verifying Adactin hotel Book hotels details",
+    "description": "",
+    "id": "verifying-adactin-hotel-book-hotels-details",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Features/TC4_BookHotel.feature",
+    "tags": [
+      {
+        "name": "@BookHotelPage",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
